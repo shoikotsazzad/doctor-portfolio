@@ -1,15 +1,17 @@
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Phone, Mail, MapPin, Award, Stethoscope } from "lucide-react";
 
-export default function Navbar({ currentPage, setCurrentPage }) {
+export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   const navItems = [
-    { id: "home", label: "Home" },
-    { id: "about", label: "About" },
-    { id: "appointment", label: "Appointment" },
-    { id: "speciality", label: "Speciality" },
-    { id: "contact", label: "Contact" },
+    { path: "/", label: "Home" },
+    { path: "/about", label: "About" },
+    { path: "/appointment", label: "Appointment" },
+    { path: "/speciality", label: "Speciality" },
+    { path: "/contact", label: "Contact" },
   ];
 
   return (
@@ -64,27 +66,27 @@ export default function Navbar({ currentPage, setCurrentPage }) {
             </div>
           </div>
 
-          {/* Desktop Navigation */}
+          {/* ---------- Desktop Navigation ---------- */}
           <div className="hidden lg:block">
             <ul className="flex gap-1">
               {navItems.map((item) => (
-                <li key={item.id}>
-                  <button
-                    onClick={() => setCurrentPage(item.id)}
+                <li key={item.path}>
+                  <Link
+                    to={item.path}
                     className={`px-5 py-2.5 rounded-lg font-medium transition-all duration-300 ${
-                      currentPage === item.id
+                      location.pathname === item.path
                         ? "bg-white text-teal-700 shadow-lg transform scale-105"
                         : "hover:bg-teal-500 hover:shadow-md"
                     }`}
                   >
                     {item.label}
-                  </button>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* ---------- Mobile Menu Button ---------- */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="lg:hidden p-2 rounded-lg hover:bg-teal-500 transition-colors"
@@ -119,20 +121,18 @@ export default function Navbar({ currentPage, setCurrentPage }) {
           <div className="lg:hidden pb-4 animate-fade-in">
             <ul className="flex flex-col gap-2">
               {navItems.map((item) => (
-                <li key={item.id}>
-                  <button
-                    onClick={() => {
-                      setCurrentPage(item.id);
-                      setMobileMenuOpen(false);
-                    }}
-                    className={`w-full text-left px-4 py-3 rounded-lg font-medium transition-all duration-300 ${
-                      currentPage === item.id
+                <li key={item.path}>
+                  <Link
+                    to={item.path}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`block w-full text-left px-4 py-3 rounded-lg font-medium transition-all duration-300 ${
+                      location.pathname === item.path
                         ? "bg-white text-teal-700 shadow-lg"
                         : "bg-teal-500 bg-opacity-30 hover:bg-opacity-50"
                     }`}
                   >
                     {item.label}
-                  </button>
+                  </Link>
                 </li>
               ))}
             </ul>
