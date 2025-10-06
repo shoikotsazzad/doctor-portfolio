@@ -73,7 +73,7 @@ export default function ContactPage() {
             </span>
           </div>
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            Contact <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">Us</span>
+            Contact <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">Me</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Have questions or need to schedule an appointment? We're here to help. Reach out to us through any of the
