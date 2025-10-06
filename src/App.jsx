@@ -2,10 +2,11 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
-import ServicesPage from "./pages/ServicesPage";
+import ServicesPage from "./pages/Appointment";
 import SpecialityPage from "./pages/SpecialityPage";
 import ContactPage from "./pages/ContactPage";
 import Footer from "./components/Footer";
+import Appointment from "./pages/Appointment";
 
 // Main App Component - DEFINED LAST
 function App() {
@@ -17,8 +18,8 @@ function App() {
         return <HomePage />;
       case 'about':
         return <AboutPage />;
-      case 'services':
-        return <ServicesPage />;
+      case 'appointment':
+        return <Appointment />;
       case 'speciality':
         return <SpecialityPage />;
       case 'contact':

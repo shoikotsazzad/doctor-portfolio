@@ -1,5 +1,5 @@
 import { Award } from "lucide-react";
-import doctorPhoto from "../assets/1584253038.jpg"; // <-- Make sure you move the image into /src/assets
+import doctorPhoto from "../assets/1584253038.jpg"; 
 
 export default function AboutPage() {
   return (
