@@ -194,7 +194,7 @@ export default function ContactPage() {
                   House: 1 and 6, Road No 4<br />
                   Mirpur Road, Dhanmondi 32
                   <br />
-                  Dhaka-1205, Bangladesh
+                  Dhaka--1205, Bangladesh
                 </p>
                 <button className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-6 py-3 rounded-full font-semibold hover:from-teal-700 hover:to-cyan-700 transition-all shadow-lg">
                   View on Google Maps
