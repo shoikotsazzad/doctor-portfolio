@@ -45,7 +45,7 @@ export default function AboutPage() {
           <p className="text-gray-700 leading-relaxed mb-3">
             Dr. Faroque Ahmed specializes in the study, diagnosis and treatment of liver diseases.
             He has extensive knowledge of the liver, its functions and the many diseases that can
-            affect it. His approach combines scientific precision with compassionate care.
+            affect it. His approach combines precision with compassionate care.
           </p>
           <p className="text-gray-700 leading-relaxed mb-3">
             With expertise in diagnostic techniques such as liver biopsy, imaging studies, and blood
