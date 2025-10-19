@@ -49,7 +49,7 @@ export default function AboutPage() {
           </p>
           <p className="text-gray-700 leading-relaxed mb-3">
             With expertise in diagnostic techniques like liver biopsy, imaging studies, and blood
-            tests, he ensures accurate diagnosis and effective treatment. He develops customized care
+            tests, he ensures effective diagnosis and accurate treatment. He develops customized care
             plans tailored to each patient’s needs while offering emotional support and guidance
             throughout their recovery journey.
           </p>
