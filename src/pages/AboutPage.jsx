@@ -56,7 +56,7 @@ export default function AboutPage() {
           <p className="text-gray-700 leading-relaxed">
             Currently serving as the Professor & Head of Hepatology at Dhaka Medical College & Hospital,
             Dr. Faroque Ahmed continues to contribute to patient well-being and medical education with
-            dedication.
+            dedication and deligation.
           </p>
         </div>
       </div>
